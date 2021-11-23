@@ -1,0 +1,51 @@
+#landing {
+    background: url('../img/background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 99px);
+
+    .text-div {
+        @include media-md {
+            width: 60%;
+            padding-right: 2rem;
+        }
+    }
+
+    .form-div {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: -5px 5px 5px rgba(158, 49, 49, 0.2);
+
+        input,
+        textarea {
+            box-shadow: inset 0px 0px 8px rgba(0,0,0,0.2);
+        }
+    }
+}
+#icons {
+    div {
+        @include media-md {
+            padding-right: 4rem;
+            padding-left: 4rem;
+        }
+    }
+}
+#about {
+    .div-3 {
+        padding-top: 2rem;
+        @include media-md {
+            padding-top: 0;
+        }
+    }
+}
+#services {
+    .card-div {
+        @include media-lg {
+            width: 33.33%;
+            padding: 0 1rem;
+        }
+    }
+    img {
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,56 @@
+// ===================
+// button
+// ===================
+.button {
+    padding: .5rem;
+    box-shadow: -5px 5px 5px rgba(0,0,0,.2);
+
+    &.default {
+        padding: .5rem 1.5rem;
+    }
+    &.full {
+        width: 100%;
+    }
+    &.half {
+        width: 50%;
+    }   
+    &.rounded {
+        border-radius: 5px;
+    }
+    &.round {
+        border-radius: 50px;
+    }
+    &.primary {
+        background: map.get($theme-colors, "primary");
+        border: 3px solid map.get($theme-colors, "primary");
+        color: map.get($theme-colors, "background");
+
+        &:hover {
+            color: map.get($theme-colors, "foreground");
+            @include shrink;
+            @include transition-ease;
+        }
+    }
+    &.secondary {
+        background: map.get($theme-colors, "secondary");
+        border: 3px solid map.get($theme-colors, "secondary");
+        color: map.get($theme-colors, "background");
+
+        &:hover {
+            color: map.get($theme-colors, "foreground");
+            @include shrink;
+            @include transition-ease;
+        }
+    }
+    &.accent {
+        background: map.get($theme-colors, "accent");
+        border: 3px solid map.get($theme-colors, "accent");
+        color: map.get($theme-colors, "background");
+
+        &:hover {
+            color: map.get($theme-colors, "foreground");
+            @include shrink;
+            @include transition-ease;
+        }
+    }
+}

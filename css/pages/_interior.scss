@@ -1,0 +1,44 @@
+#about-interior {
+    .card-div {
+        @include media-lg {
+            padding: 0 1rem;
+        }
+    }
+    .text {
+        @include media-md {
+            width: 60%;
+            padding: 0 2rem 0 0;
+        }
+    }
+    img {
+        border-radius: 5px;
+    }
+}
+#contact-interior {
+    .form-div {
+        @include media-md {
+            width: 60%;
+        }
+    }
+    .img-div {
+        padding-top: 4rem;
+        @include media-md {
+            width: 40%;
+            padding-top: 0;
+        }
+    }
+}
+#reviews-interior {
+    .form-div {
+        @include media-md {
+            width: 60%;
+        }
+    }
+    .img-div {
+        margin-top: 4rem;
+        @include media-md {
+            width: 40%;
+            margin-top: 0;
+        }
+    }
+}
